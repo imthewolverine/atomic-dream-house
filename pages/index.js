@@ -12,7 +12,7 @@ export default function Home() {
                 className: "mb-36 relative text-white",
                 navbar: {
                     className: "absolute px-40 inset-x-0 top-0 flex justify-between items-center border-b border-stone-400"
-                } 
+                }
             },
             aboutUs: {
                 className: "mb-36 flex px-40 w-full",
@@ -62,24 +62,24 @@ export default function Home() {
     ]
     return (
         <div className=''>
-            <Header props={homePagedata[0].header}/>
-            <AboutUs props={homePagedata[0].aboutUs}/>
+            <Header {...homePagedata[0].header}/>
+            <AboutUs {...homePagedata[0].aboutUs}/>
             <div className='flex px-40 w-full'>
                 <div className='pb-6'>
                     <p className='text-5xl pb-3'>Our Projects</p>
                     <p className='text-yellow-700'>Choose your future house</p>
                 </div>
             </div>
-            <House1 props={homePagedata[0].house1}/>
-            <House2 props={homePagedata[0].house2}/>
+            <House1 {...homePagedata[0].house1}/>
+            <House2 {...homePagedata[0].house2}/>
             <div className='mb-36 flex justify-center items-center pt-5 font-medium'>
                 <p>See more</p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 pl-1 text-yellow-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
             </div>
-            <CustomerReview props={homePagedata[0].customerReview}/>
-            <Footer props={homePagedata[0].footer}/>
+            <CustomerReview {...homePagedata[0].customerReview}/>
+            <Footer {...homePagedata[0].footer}/>
         </div>
   )
 }

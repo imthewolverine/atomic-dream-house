@@ -2,14 +2,14 @@ import BuyHouse from "../molecules/BuyHouse";
 
 export default function House1(props) {
     return (
-        <div className={props.props.className}>
+        <div className={props.className}>
             <div className='w-2/5'>
                 {/*ene dr TitleAndSubtext*/}
                 <div className=''>
                     <p className='text-3xl font-medium pb-2'>Premium Eco house BRANDOM</p>
                     <p className=''>This premium resident house was designed for a big family about 4-6 people. It has own large and spacious terrace of 104.7 sq.m. acts at the same time as a porch.<br/><br/> The presence of the entrance vestibule allows you to use this project of the house in any climatic conditions. The patio between the living room and the master bedroom is also a passive thermal device: it creates a thermal differential between the swimming pool and the patio.<br/><br/> During the planning, it was decided to combine the kitchen dining room - living room, so we got a spacious room where you can implement any interior design.</p>
                 </div>
-                <BuyHouse className={props.props.buyHouse.className}/>
+                <BuyHouse className={props.buyHouse.className}/>
             </div>
             <div className='w-3/5 flex -mt-24'>
                 <div className='w-3/5 pl-8 pt-28'>

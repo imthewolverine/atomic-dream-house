@@ -2,11 +2,11 @@ import HeadersBody from "../molecules/HeadersBody";
 import Navbar from "../molecules/Navbar";
 
 export default function Header(props) {
-    console.log(props.props.className)
+    console.log(props)
     return (
-        <div className={props.props.className}>
+        <div className={props.className}>
             <HeadersBody/>
-            <Navbar className={props.props.navbar.className}/>
+            <Navbar className={props.navbar.className}/>
         </div>
     )
 }
