@@ -1,6 +1,6 @@
-export default function FooterContact() {
+export default function FooterContact(props) {
     return (
-        <div className='w-3/5'>
+        <div className={props.className}>
             <p className='text-3xl font-medium pb-4'>Let's start your project!</p>
             <p className='font-medium text-lg pb-6'>Fill up the Form and our Team<br/> will call you in 1 minute</p>
             <p className='font-medium text-lg pb-3'>Contact detail</p>

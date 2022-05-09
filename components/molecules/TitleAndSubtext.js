@@ -1,6 +1,6 @@
-export default function TitleAndSubtext() {
+export default function TitleAndSubtext(props) {
     return (
-        <div className='bg-gray-100 py-14 pl-8 pr-12'>
+        <div className={props.className}>
             <div className='flex justify-center'>
                 <p className='text-5xl pb-6'>About us</p>
             </div>

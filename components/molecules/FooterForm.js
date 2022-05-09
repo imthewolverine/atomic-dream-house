@@ -1,6 +1,6 @@
-export default function FooterForm() {
+export default function FooterForm(props) {
     return (
-        <div className='w-2/5 -mt-12'>
+        <div className={props.className}>
             <div className='bg-white p-12 text-stone-400'>
                 <p className='border-b border-orange-200 py-4 pl-3'>Name*</p>
                 <p className='border-b border-orange-200 py-4 pl-3'>Last Name</p>

@@ -1,6 +1,6 @@
-export default function ReviewCard() {
+export default function ReviewCard(props) {
     return (
-        <div className='bg-amber-500 py-8 px-20'>
+        <div className={props.className}>
             <div className='flex justify-center pb-2'>
                 <p className='text-lg font-semibold'>Fantastic house</p>
             </div>

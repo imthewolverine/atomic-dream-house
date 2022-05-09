@@ -1,6 +1,7 @@
-export default function Navbar() {
+
+export default function Navbar(props) {
     return (
-        <div className='absolute px-40 inset-x-0 top-0 flex justify-between items-center border-b border-stone-400'>
+        <div className={props.className}>
             <div>
                 <p className='text-4xl'>Logo</p>
             </div>

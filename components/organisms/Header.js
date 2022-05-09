@@ -1,11 +1,12 @@
 import HeadersBody from "../molecules/HeadersBody";
 import Navbar from "../molecules/Navbar";
 
-export default function Header() {
+export default function Header(props) {
+    console.log(props.props.className)
     return (
-        <div className='mb-36 relative text-white'>
-            <HeadersBody />
-            <Navbar />
+        <div className={props.props.className}>
+            <HeadersBody/>
+            <Navbar className={props.props.navbar.className}/>
         </div>
     )
 }

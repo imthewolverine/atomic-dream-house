@@ -1,6 +1,6 @@
-export default function CustomerReviewNavbar() {
+export default function CustomerReviewNavbar(props) {
     return (
-        <div className='flex justify-between text-white pt-28'>
+        <div className={props.className}>
             <p className='text-4xl ml-36'>Customer Reviews</p>
             <div className='flex mt-8 pb-2'>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 border border-yellow-700 text-yellow-700 p-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>

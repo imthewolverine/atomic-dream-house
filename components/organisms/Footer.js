@@ -2,14 +2,14 @@ import FooterContact from "../molecules/FooterContact";
 import FooterFooter from "../molecules/FooterFooter";
 import FooterForm from "../molecules/FooterForm";
 
-export default function Footer() {
+export default function Footer(props) {
     return (
         <>
-            <div className='flex justify-center pt-24 mt-36 px-40 w-full bg-orange-200 h-112'>
-                    <FooterContact />
-                    <FooterForm />
+            <div className={props.props.className}>
+                    <FooterContact className={props.props.footerContact.className}/>
+                    <FooterForm className={props.props.footerForm.className}/>
             </div>
-            <FooterFooter />
+            <FooterFooter className={props.props.footerFooter.className}/>
         </>
     )
 }

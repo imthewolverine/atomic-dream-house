@@ -1,6 +1,6 @@
-export default function House2() {
+export default function House2(props) {
     return (
-        <div className='flex px-40 w-full'>
+        <div className={props.props.className}>
             <div className='w-1/3 pr-8'>
                 <img className="w-full h-80 object-center object-cover pb-8" src="https://st.hzcdn.com/simgs/pictures/salones/s-v-house-a-cero-joaquin-torres-y-rafael-llamazares-img~8f21102406e703c1_8-8595-1-2bd790a.jpg"/>
                 <img className="w-full h-140 object-center object-cover" src="https://cdn.decoratorist.com/wp-content/uploads/kloof-house-luxury-residence-bedfordview-johannesburg-697161.jpg"/>
